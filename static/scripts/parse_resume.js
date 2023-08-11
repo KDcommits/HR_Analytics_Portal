@@ -23,9 +23,22 @@ $.ajax({
     type: 'POST',
     data: JSON.stringify(textareaValues),
     contentType: "application/json",
-    dataType: 'json'
-});
-  }
+    dataType: 'json',
+    success: function(response) {
+        if (response.success) {
+          alert("Success!!! Candidate information is saved");
+          window.location.href = '/available_candidates';
+        } else {
+          alert("Sorry!!! Unable to save the candidate information.");
+          window.location.href = '/parse_resume';
+        }
+      },
+      error: function(error) {
+        // Handle the error response if needed
+        alert("Error!!! Unable to save the Job");
+      }
+    });
+}
 
  // JavaScript to handle the dropdown selection and send the data to the backend
  document.getElementById('optionSelect').addEventListener('change', function(event) {
