@@ -1,5 +1,6 @@
 <h2 align="center">HR Analytics Platform</h2>
 
-![image](https://github.com/coderkol95/hr_analytics/assets/124420761/023314a4-d09b-495d-845a-4124d9e5e176)
+![image](https://github.com/KDcommits/HR_Analytics_Portal/assets/124420761/5246dea5-b83a-486f-a800-9c3d65b775e2)
+
 
 
